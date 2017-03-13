@@ -6,8 +6,8 @@
 >
 
     <!--在相应的服务类上加入@RefBean注解即可完成注册，不需要此配置-->
-    <!--<bean id="myUserService" class="com.mo9.core.web.service.ApiServiceFactoryBean">
-        <property name="innerClass" value="com.mo9.neo4j.controller.UserController"/>
+    <!--<bean id="myUserService" class="com.study.core.web.service.ApiServiceFactoryBean">
+        <property name="innerClass" value="com.study.neo4j.controller.UserController"/>
     </bean>-->
     
 </beans>

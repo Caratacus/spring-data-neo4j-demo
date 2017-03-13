@@ -14,14 +14,14 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * @Time 15:33
  */
 @Configuration
-@ComponentScan(value = "com.mo9.neo4j") //neo4j的扫描包
-@EnableNeo4jRepositories(basePackages = {"com.mo9.neo4j.repo"}) //repository所在的包，相当于dao层
+@ComponentScan(value = "com.study.neo4j") //neo4j的扫描包
+@EnableNeo4jRepositories(basePackages = {"com.study.neo4j.repo"}) //repository所在的包，相当于dao层
 @EnableTransactionManagement
 public class Neo4jConfig{
     @Bean
     public SessionFactory getSessionFactory() {
         System.out.println("开始配置neo4j++++++++++++++++++++++++++++++++++++++++");
-        return new SessionFactory(getConfiguration(),"com.mo9.neo4j.domain");
+        return new SessionFactory(getConfiguration(),"com.study.neo4j.domain");
     }
     /**
      * 在neo4j.properties文件中配置驱动和连接

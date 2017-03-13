@@ -17,10 +17,10 @@
     </bean>
     <bean id="sessionFactory" class="org.neo4j.ogm.session.SessionFactory">
         <constructor-arg name="configuration" ref="neo4JConfig" index="0"/>
-        <constructor-arg name="packages" value="com.mo9.neo4j" index="1"/>
+        <constructor-arg name="packages" value="com.study.neo4j" index="1"/>
     </bean>
 
     <bean id="session" class="org.neo4j.ogm.session.SessionFactory" />
 
-    <neo4j:repositories base-package="com.mo9"/>-->
+    <neo4j:repositories base-package="com.study"/>-->
 </beans>
