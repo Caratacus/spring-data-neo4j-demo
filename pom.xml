@@ -22,7 +22,6 @@
         <neo4j.version>3.0.1</neo4j.version>
         <neo4j-ogm.version>2.1.1</neo4j-ogm.version>
         <spring-data-neo4j.version>4.2.1.RELEASE</spring-data-neo4j.version>
-
         <!-- plugin version -->
         <maven.compiler.version>2.3.2</maven.compiler.version>
         <maven.resources.version>2.4.3</maven.resources.version>
@@ -36,37 +35,22 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-neo4j</artifactId>
+        </dependency>
         <!-- JUnit test dependency -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-rest</artifactId>
-        </dependency>
-        <!--spring data-->
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-neo4j</artifactId>
-        </dependency>
-        <!-- Neo4j OGM -->
-        <dependency>
-            <groupId>org.neo4j</groupId>
-            <artifactId>neo4j-ogm-core</artifactId>
-            <version>${neo4j-ogm.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.voodoodyne.jackson.jsog</groupId>
             <artifactId>jackson-jsog</artifactId>
             <version>1.1</version>
-            <scope>compile</scope>
         </dependency>
         <!-- end::dependencies[] -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-neo4j</artifactId>
-        </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
