@@ -1,7 +1,7 @@
 package com.study.neo4j.service.impl;
 
-import com.study.neo4j.repo.CompaynRepository;
 import com.study.neo4j.domain.Company;
+import com.study.neo4j.repository.CompaynRepository;
 import com.study.neo4j.service.CompaynService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

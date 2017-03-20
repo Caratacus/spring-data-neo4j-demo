@@ -1,8 +1,8 @@
-package com.study.neo4j.repo;
+package com.study.neo4j.repository;
 
 import com.study.neo4j.domain.User;
 import org.springframework.data.neo4j.annotation.Query;
-import org.springframework.data.neo4j.repository.Neo4jRepository;
+import org.springframework.data.neo4j.repository.GraphRepository;
 import org.springframework.data.repository.query.Param;
 
 import java.util.List;
@@ -12,7 +12,7 @@ import java.util.List;
  * @Date 2017/3/2
  * @Time 15:36
  */
-public interface UserRepository extends Neo4jRepository<User,Long> {
+public interface UserRepository extends GraphRepository<User> {
 
     @Query("MATCH (n:User {name:{name}}) RETURN n  ")
     List<User> findByName(@Param("name") String name);

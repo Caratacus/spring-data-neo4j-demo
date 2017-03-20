@@ -1,4 +1,4 @@
-package com.study.neo4j.domain.relation;
+package com.study.neo4j.relation;
 
 import com.study.neo4j.domain.Company;
 import com.study.neo4j.domain.User;

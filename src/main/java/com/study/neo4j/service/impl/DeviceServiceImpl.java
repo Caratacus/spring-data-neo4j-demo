@@ -1,7 +1,7 @@
 package com.study.neo4j.service.impl;
 
-import com.study.neo4j.repo.DeviceRepository;
 import com.study.neo4j.domain.Device;
+import com.study.neo4j.repository.DeviceRepository;
 import com.study.neo4j.service.DeviceService;
 import org.springframework.stereotype.Service;
 
