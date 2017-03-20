@@ -1,7 +1,10 @@
 package com.study.neo4j.domain;
 
-import com.study.neo4j.relationtype.Mo9RelationType;
-import org.neo4j.ogm.annotation.*;
+import com.study.neo4j.relationtype.RelationType;
+import org.neo4j.ogm.annotation.GraphId;
+import org.neo4j.ogm.annotation.Index;
+import org.neo4j.ogm.annotation.NodeEntity;
+import org.neo4j.ogm.annotation.Relationship;
 
 import java.util.Collection;
 import java.util.HashSet;
@@ -30,7 +33,7 @@ public class Company {
         this.employes.add(user);
     }
 
-    @Relationship(type = Mo9RelationType.HIRING)
+    @Relationship(type = RelationType.HIRING)
     public Set<User> employes = new HashSet<>();
 
     public Long getId() {

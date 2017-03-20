@@ -1,5 +1,15 @@
 package com.study.neo4j;
 
+import java.util.Date;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.transaction.annotation.Transactional;
+
 import com.study.neo4j.domain.Company;
 import com.study.neo4j.domain.Device;
 import com.study.neo4j.domain.User;
@@ -12,15 +22,6 @@ import com.study.neo4j.repository.User2DeviceRepository;
 import com.study.neo4j.service.CompaynService;
 import com.study.neo4j.service.DeviceService;
 import com.study.neo4j.service.UserService;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.transaction.annotation.Transactional;
-
-import java.util.Date;
 
 /**
  * @Author wtwei

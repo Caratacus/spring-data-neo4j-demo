@@ -1,9 +1,10 @@
 package com.study.neo4j.service;
 
-import com.study.neo4j.domain.User;
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import com.study.neo4j.domain.User;
 
 /**
  * @Author wtwei

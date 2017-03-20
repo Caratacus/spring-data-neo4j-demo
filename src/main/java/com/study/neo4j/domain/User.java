@@ -1,13 +1,14 @@
 package com.study.neo4j.domain;
 
-import com.study.neo4j.relationtype.Mo9RelationType;
+import java.util.HashSet;
+import java.util.Set;
+
 import org.neo4j.ogm.annotation.GraphId;
 import org.neo4j.ogm.annotation.Index;
 import org.neo4j.ogm.annotation.NodeEntity;
 import org.neo4j.ogm.annotation.Relationship;
 
-import java.util.HashSet;
-import java.util.Set;
+import com.study.neo4j.relationtype.RelationType;
 
 /**
  * @Author wtwei
@@ -31,14 +32,14 @@ public class User {
     private String companyAddress;
     private String companyName;
 
-    @Relationship(type = Mo9RelationType.WORK_FOR)
+    @Relationship(type = RelationType.WORK_FOR)
     Set<Company> worksFor = new HashSet<>();
 
     public void worksFor(Company company) {
         this.worksFor.add(company);
     }
 
-    @Relationship(type = Mo9RelationType.OWNED_DEVICE)
+    @Relationship(type = RelationType.OWNED_DEVICE)
     private Set<Device> ownDevices = new HashSet<>();
 
     public void hadDevice(Device device){

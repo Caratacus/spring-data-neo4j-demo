@@ -1,12 +1,13 @@
 package com.study.neo4j.service.impl;
 
-import com.study.neo4j.domain.Company;
-import com.study.neo4j.repository.CompaynRepository;
-import com.study.neo4j.service.CompaynService;
+import javax.annotation.Resource;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.annotation.Resource;
+import com.study.neo4j.domain.Company;
+import com.study.neo4j.repository.CompaynRepository;
+import com.study.neo4j.service.CompaynService;
 
 /**
  * @Author wtwei
@@ -31,7 +32,7 @@ public class CompanyServiceImpl implements CompaynService {
 
     @Override
     public Company findById(Long id) {
-        return (Company) compaynRepository.findOne(id);
+        return compaynRepository.findOne(id);
     }
 
     @Override

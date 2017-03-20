@@ -1,11 +1,12 @@
 package com.study.neo4j.service.impl;
 
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Service;
+
 import com.study.neo4j.domain.Device;
 import com.study.neo4j.repository.DeviceRepository;
 import com.study.neo4j.service.DeviceService;
-import org.springframework.stereotype.Service;
-
-import javax.annotation.Resource;
 
 /**
  * @Author wtwei .

@@ -1,11 +1,12 @@
 package com.study.neo4j.repository;
 
-import com.study.neo4j.domain.User;
+import java.util.List;
+
 import org.springframework.data.neo4j.annotation.Query;
 import org.springframework.data.neo4j.repository.GraphRepository;
 import org.springframework.data.repository.query.Param;
 
-import java.util.List;
+import com.study.neo4j.domain.User;
 
 /**
  * @Author wtwei

@@ -7,7 +7,6 @@ import org.neo4j.ogm.annotation.typeconversion.DateString;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
-import java.util.Set;
 
 /**
  * @Author wtwei .

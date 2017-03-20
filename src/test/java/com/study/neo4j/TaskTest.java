@@ -1,7 +1,7 @@
 package com.study.neo4j;
 
-import com.google.gson.Gson;
-import com.study.neo4j.domain.Task;
+import java.net.URL;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,7 +12,8 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.net.URL;
+import com.google.gson.Gson;
+import com.study.neo4j.domain.Task;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = ServerApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)

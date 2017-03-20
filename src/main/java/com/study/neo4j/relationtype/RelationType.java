@@ -5,7 +5,7 @@ package com.study.neo4j.relationtype;
  * @Date 2017/3/2
  * @Time 14:13
  */
-public interface Mo9RelationType {
+public interface RelationType {
     public static final String FRIEND_OF = "FRIEND_OF";
     public static final String WORK_FOR = "WORK_FOR";
     public static final String HIRING = "HIRING";

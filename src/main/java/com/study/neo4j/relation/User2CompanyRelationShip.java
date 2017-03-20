@@ -1,22 +1,23 @@
 package com.study.neo4j.relation;
 
-import com.study.neo4j.domain.Company;
-import com.study.neo4j.domain.User;
-import com.study.neo4j.relationtype.Mo9RelationType;
+import java.util.Date;
+
 import org.neo4j.ogm.annotation.EndNode;
 import org.neo4j.ogm.annotation.GraphId;
 import org.neo4j.ogm.annotation.RelationshipEntity;
 import org.neo4j.ogm.annotation.StartNode;
 import org.neo4j.ogm.annotation.typeconversion.DateString;
 
-import java.util.Date;
+import com.study.neo4j.domain.Company;
+import com.study.neo4j.domain.User;
+import com.study.neo4j.relationtype.RelationType;
 
 /**
  * @Author wtwei
  * @Date 2017/3/2
  * @Time 15:00
  */
-@RelationshipEntity(type = Mo9RelationType.WORK_FOR)
+@RelationshipEntity(type = RelationType.WORK_FOR)
 public class User2CompanyRelationShip {
     @GraphId
     private Long id;

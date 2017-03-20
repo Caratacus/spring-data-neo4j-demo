@@ -1,12 +1,13 @@
 package com.study.neo4j.repository;
 
-import com.study.neo4j.domain.Task;
+import java.util.Collection;
+
 import org.springframework.data.neo4j.annotation.Query;
 import org.springframework.data.neo4j.repository.GraphRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import java.util.Collection;
+import com.study.neo4j.domain.Task;
 
 @Repository
 public interface TaskRepository extends GraphRepository<Task> {

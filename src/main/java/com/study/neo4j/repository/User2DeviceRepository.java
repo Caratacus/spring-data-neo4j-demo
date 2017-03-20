@@ -1,6 +1,7 @@
 package com.study.neo4j.repository;
 
 import org.springframework.data.neo4j.repository.GraphRepository;
+
 import com.study.neo4j.relation.User2DeviceRelationShip;
 
 /**

@@ -1,7 +1,8 @@
 package com.study.neo4j.service;
 
-import com.study.neo4j.domain.Company;
 import org.springframework.stereotype.Service;
+
+import com.study.neo4j.domain.Company;
 
 /**
  * @Author wtwei
