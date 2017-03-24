@@ -1,13 +1,17 @@
 package com.study.neo4j.relationtype;
 
 /**
- * @Author wtwei
- * @Date 2017/3/2
- * @Time 14:13
+ * <p>
+ * 关系类型
+ * </p>
+ *
+ * @author Caratacus
+ * @date 2017-03-23
  */
 public interface RelationType {
-    public static final String FRIEND_OF = "FRIEND_OF";
-    public static final String WORK_FOR = "WORK_FOR";
-    public static final String HIRING = "HIRING";
-    public static final String OWNED_DEVICE = "OWNED_DEVICE";
+	public static final String FRIEND = "朋友";
+	public static final String COLLEAGUE = "同事";
+	public static final String EMPLOYEE = "雇员";
+	public static final String DEVICE = "设备";
+	public static final String WROKING = "工作";
 }

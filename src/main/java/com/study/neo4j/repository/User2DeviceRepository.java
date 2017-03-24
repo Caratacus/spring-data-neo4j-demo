@@ -1,13 +1,17 @@
 package com.study.neo4j.repository;
 
+import com.study.neo4j.relation.User2DeviceRelation;
 import org.springframework.data.neo4j.repository.GraphRepository;
-
-import com.study.neo4j.relation.User2DeviceRelationShip;
+import org.springframework.stereotype.Repository;
 
 /**
- * @Author wtwei .
- * @Date 2017/3/3 .
- * @Time 17:52 .
+ * <p>
+ * User2DeviceRepository
+ * </p>
+ *
+ * @author Caratacus
+ * @date 2017-03-23
  */
-public interface User2DeviceRepository extends GraphRepository<User2DeviceRelationShip> {
+@Repository
+public interface User2DeviceRepository extends GraphRepository<User2DeviceRelation> {
 }

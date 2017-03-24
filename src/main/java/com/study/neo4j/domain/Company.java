@@ -6,73 +6,76 @@ import org.neo4j.ogm.annotation.Index;
 import org.neo4j.ogm.annotation.NodeEntity;
 import org.neo4j.ogm.annotation.Relationship;
 
-import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
 /**
- * @Author wtwei
- * @Date 2017/3/2
- * @Time 14:58
+ * <p>
+ * 公司实体
+ * </p>
+ *
+ * @author Caratacus
+ * @date 2017-03-23
  */
-@NodeEntity
+@NodeEntity(label = "公司")
 public class Company {
-    @GraphId
-    private Long id;
-    @Index
-    private String compaynName;
-    private String companyAddress;
-    private String companyPhone;
-    private String industry;
+	@GraphId
+	private Long id;
 
-    public Collection<User> getEmployes() {
-        return employes;
-    }
+	public Long getId() {
+		return id;
+	}
 
-    public void hiring(User user) {
-        this.employes.add(user);
-    }
+	public void setId(Long id) {
+		this.id = id;
+	}
+	@Index
+	private String name;
+	private String address;
+	private String mobile;
+	private String industry;
 
-    @Relationship(type = RelationType.HIRING)
-    public Set<User> employes = new HashSet<>();
+	@Relationship(type = RelationType.COLLEAGUE)
+	public Set<User> employes = new HashSet<>();
 
-    public Long getId() {
-        return id;
-    }
+	public String getName() {
+		return name;
+	}
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-    public String getCompaynName() {
-        return compaynName;
-    }
+	public String getAddress() {
+		return address;
+	}
 
-    public void setCompaynName(String compaynName) {
-        this.compaynName = compaynName;
-    }
+	public void setAddress(String address) {
+		this.address = address;
+	}
 
-    public String getCompanyAddress() {
-        return companyAddress;
-    }
+	public String getMobile() {
+		return mobile;
+	}
 
-    public void setCompanyAddress(String companyAddress) {
-        this.companyAddress = companyAddress;
-    }
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
 
-    public String getCompanyPhone() {
-        return companyPhone;
-    }
+	public String getIndustry() {
+		return industry;
+	}
 
-    public void setCompanyPhone(String companyPhone) {
-        this.companyPhone = companyPhone;
-    }
+	public void setIndustry(String industry) {
+		this.industry = industry;
+	}
 
-    public String getIndustry() {
-        return industry;
-    }
+	public Set<User> getEmployes() {
+		return employes;
+	}
 
-    public void setIndustry(String industry) {
-        this.industry = industry;
-    }
+	public void setEmployes(Set<User> employes) {
+		this.employes = employes;
+	}
+
 }

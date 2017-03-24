@@ -1,13 +1,18 @@
 package com.study.neo4j.repository;
 
 import org.springframework.data.neo4j.repository.GraphRepository;
+import org.springframework.stereotype.Repository;
 
-import com.study.neo4j.relation.Company2UserRelationShip;
+import com.study.neo4j.relation.Company2UserRelation;
 
 /**
- * @Author wtwei .
- * @Date 2017/3/6 .
- * @Time 11:10 .
+ * <p>
+ * Company2UserRepository
+ * </p>
+ *
+ * @author Caratacus
+ * @date 2017-03-23
  */
-public interface Company2UserRepository extends GraphRepository<Company2UserRelationShip> {
+@Repository
+public interface Company2UserRepository extends GraphRepository<Company2UserRelation> {
 }
